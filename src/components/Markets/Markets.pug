@@ -1,0 +1,10 @@
+div
+  table
+    thead
+      tr
+        th Market
+        th Price Change
+    tbody
+      tr(v-for="market in getMarkets")
+        td {{market.MarketName}}
+        td {{market.priceChange.toFixed(3)}}%
