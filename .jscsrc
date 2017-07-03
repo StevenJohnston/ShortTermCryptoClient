@@ -4,7 +4,7 @@
 
     "requireSemicolons": true,
     "requireParenthesesAroundIIFE": true,
-    "maximumLineLength": 120,
+    "maximumLineLength": false,
     "validateLineBreaks": "CRLF",
     "validateIndentation": 2,
     "disallowSpaceAfterObjectKeys": false,

@@ -1,10 +1,21 @@
 div
-  table
+  table.markets
     thead
       tr
         th Market
         th Price Change
     tbody
-      tr(v-for="market in getMarkets")
-        td {{market.MarketName}}
-        td {{market.priceChange.toFixed(3)}}%
+      tr(v-for="value in priceUp()")
+        td {{value.MarketName}}
+        td.number.up {{value.priceChange}}%
+  table.markets
+    thead
+      tr
+        th Market
+        th Price Change
+    tbody
+      tr(v-for="value in priceDown()" v-on:click="openMarket(value.MarketName)")
+        td(v-bind:click="openMarket")
+          a(target="_blank" v-bind:href="'https://www.bittrex.com/Market/Index?MarketName=' + value.MarketName") {{value.MarketName}}
+        td.number.down {{value.priceChange}}%
+    

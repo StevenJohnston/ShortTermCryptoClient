@@ -1,0 +1,74 @@
+@import '../../style/variables.styl'
+body
+    font-family 'Open Sans', sans-serif
+    font-weight 300
+    line-height 1.42em
+    color #A7A1AE
+    background-color $background
+
+h1
+    font-size 3em
+    font-weight 300
+    line-height 1em
+    text-align center
+    color #4DC3FA
+
+h2
+    font-size 1em
+    font-weight 300
+    text-align center
+    display block
+    line-height 1em
+    padding-bottom 2em
+    color #FB667A
+
+.blue
+    color #185875
+
+.yellow
+    color #FFF842
+
+.markets
+    text-align left
+    overflow hidden
+    width 50%
+    display inline-table
+    padding 0 0 8em 0
+    margin 0 auto
+    th
+        background-color #1F2739
+        h1
+            font-weight bold
+            font-size 1em
+            text-align left
+            color #185875
+    td
+        &.number
+          text-align: right;
+        font-weight normal
+        font-size 1em
+        -webkit-box-shadow 0 2px 2px -2px #0E1119
+        -moz-box-shadow 0 2px 2px -2px #0E1119
+        box-shadow 0 2px 2px -2px #0E1119
+        &.up
+          color: #65fbc9
+        &.down
+          color: #FB667A
+        a
+          text-decoration: none
+          color: #A7A1AE
+          &:visited,
+          &:hover,
+          &:active
+            color: #A7A1AE
+    tr
+        color: #A7A1AE
+        &:nth-child(odd)
+            background-color #314e4e
+        &:nth-child(even)
+            background-color #2b4545
+        &:hover
+            background-color #464A52
+            -webkit-box-shadow 0 6px 6px -6px #0E1119
+            -moz-box-shadow 0 6px 6px -6px #0E1119
+            box-shadow 0 6px 6px -6px #0E1119

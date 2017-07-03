@@ -1,1 +1,2 @@
-export const ADD_TICK = 'CREATE_SESSION';
+export const ADD_TICK = 'ADD_TICK';
+export const SET_PERIOD = 'SET_PERIOD';

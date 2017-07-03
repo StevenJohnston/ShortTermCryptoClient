@@ -1,5 +1,6 @@
 import {
-  ADD_TICK
+  ADD_TICK,
+  SET_PERIOD
 } from './mutation-types';
 import apiClient from './modules/apiClient';
 let client = apiClient();
@@ -10,6 +11,12 @@ export const actions = {
       resolve();
     });
   },
+  [SET_PERIOD] ({commit, state}, payload) {
+    return new Promise((resolve, reject) => {
+      commit(SET_PERIOD, payload);
+      resolve();
+    });
+  }
 };
 /*
 export const setName = ({ dispatch }, payload) => {
