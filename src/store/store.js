@@ -31,11 +31,6 @@ export default new Vuex.Store({
           payload
         ]
       };
-      //state.markets[payload.MarketName].push(payload);
-      console.log('red');
-      console.log(_.reduce(state.markets, (r,v) => {
-        return r + v.ticks.length;
-      }, 0));
     },
     [SET_PERIOD] (state, payload) {
       state.period = payload.period;
